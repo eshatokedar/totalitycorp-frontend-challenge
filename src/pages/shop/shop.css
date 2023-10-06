@@ -1,0 +1,116 @@
+  .products {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .product {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+  }
+  
+  .product img {
+    border-radius: 2rem;
+    max-width: 100%;
+  }
+  
+  .product .description {
+    font-size: 1.2rem;
+    color: #726446;
+    text-align: center;
+  }
+  
+  .product:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid #b39d6f;
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: #b39d6f;
+    color: white;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .products {
+      grid-template-columns: 1fr; /* Display products in a single column */
+      gap:100px;
+    }
+  
+    .product {
+      margin: 10px; /* Reduce margin further for smaller screens */
+    }
+    .product:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  
+    .addToCartBttn {
+      min-width: 80px; /* Adjust button width for smaller screens */
+    }
+  }
+  @media (min-width: 769px) {
+    .products {
+      grid-template-columns: 1fr 1fr; /* Add more columns for larger screens */
+    }
+  
+    .product {
+      margin: 20px; 
+    }
+  
+    .addToCartBttn {
+      min-width: 120px; 
+    }
+  }
+  @media (min-width: 900px) {
+    .products {
+      grid-template-columns: 1fr 1fr 1fr; 
+    }
+  
+    .product {
+      width: 250px; 
+      height: 320px; 
+      margin: 30px; 
+    }
+  
+    .addToCartBttn {
+      min-width: 120px; 
+    }
+  }
+  @media (min-width: 1200px) {
+    .products {
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+    }
+  
+    .product {
+      width: 250px; 
+      height: 320px; 
+      margin: 30px; 
+    }
+  
+    .addToCartBttn {
+      min-width: 120px; 
+    }
+  }
