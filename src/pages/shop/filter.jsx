@@ -11,12 +11,11 @@ const Filter = ({ handleSort }) => {
 
   return (
     <div className="filter">
-      <label>Sort By:</label>
-      <select value={selectedSort} onChange={handleSortChange}>
-        <option value="">Select</option>
-        <option value="category">Category</option>
-        <option value="price">Price</option>
-        <option value="ratings">Ratings</option>
+      <div className="sort">Sort By: </div>
+      <select className="select-sort" value={selectedSort} onChange={handleSortChange}>
+      <option value="sort-random">Random</option>
+        <option className="sort-price" value="price">Price</option>
+        <option className="sort-ratings"value="ratings">Ratings</option>
       </select>
     </div>
   );

@@ -15,11 +15,10 @@
   .links {
     margin-right: 2rem;
     display: flex;
+    flex-direction: row;
     gap:20px;
   }
   .links a:hover{
-    border: 2px solid azure;
-    border-radius: 10px;
     cursor: pointer;
   }
   
@@ -30,4 +29,13 @@
     font-size: 30px;
   }
 
+  @media (max-width: 768px) {
+    .navbar{
+      height: auto;
+    }
+    .title {
+      margin-left: 1rem;
+      font-size: 2rem;
+    }
+  }
   

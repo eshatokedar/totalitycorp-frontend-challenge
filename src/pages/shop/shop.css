@@ -53,6 +53,25 @@
     color: white;
     cursor: pointer;
   }
+  .filter{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+  .sort{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #b39d6f;
+  }
+.select-sort{
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #b39d6f;
+  border: 2px solid #b39d6f;
+  border-radius: 2rem;
+}
+  
   @media (max-width: 768px) {
     .products {
       grid-template-columns: 1fr; /* Display products in a single column */

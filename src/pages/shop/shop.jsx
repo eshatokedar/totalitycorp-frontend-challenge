@@ -12,9 +12,7 @@ export const Shop = () => {
     setSelectedSort(sortOption);
 
     let sorted = [...PRODUCTS];
-    if (sortOption === "category") {
-      sorted = sorted.sort((a, b) => a.productName.localeCompare(b.productName));
-    } else if (sortOption === "price") {
+    if (sortOption === "price") {
       sorted = sorted.sort((a, b) => a.price - b.price);
     } else if (sortOption === "ratings") {
       sorted = sorted.sort((a, b) => b.ratings - a.ratings); // Sort by ratings in descending order
