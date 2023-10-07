@@ -39,7 +39,7 @@ export const Cart = () => {
         <CheckoutForm onCheckout={handlePlaceOrder} />
       ) : totalAmount > 0 ? (
         <div className="checkout">
-          <p> Subtotal: ${totalAmount} </p>
+          <p> Subtotal: ₹{totalAmount} </p>
           <button
             className="continue-shopping"
             onClick={() => navigate("/")}
