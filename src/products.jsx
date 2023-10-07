@@ -30,7 +30,7 @@ export const PRODUCTS = [
     price: 999.0,
     ratings: 4,
     productImage: product2,
-    category: "Fashion"
+    category: "Utensils"
   },
   {
     id: 3,
@@ -86,7 +86,7 @@ export const PRODUCTS = [
     price: 2050,
     ratings: 3.5,
     productImage: product9,
-    category: "Fashion"
+    category: "Home Decor"
   },
   {
     id: 10,
