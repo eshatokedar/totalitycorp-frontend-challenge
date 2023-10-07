@@ -4,7 +4,7 @@
     width: 100%;
     height: auto;
     display: grid;
-    gap: 90px;
+    gap: 70px;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
   }
@@ -26,10 +26,13 @@
     max-width: 100%;
   }
   
-  .product .description {
+ .description {
     font-size: 1.2rem;
     color: #726446;
     text-align: center;
+  }
+  .description p{
+    margin-bottom: -2px;
   }
   
   .product:hover {
@@ -59,27 +62,36 @@
     margin-top: 2rem;
     margin-right: 2rem;
   }
-  .sort{
+  .sort, .category{
     font-size: 1.5rem;
     margin-left: 1rem;
     color: #b39d6f;
   }
-.select-sort{
+.select-sort, .category-sort{
   font-size: 1.2rem;
   margin-left: 1rem;
   color: #b39d6f;
   border: 2px solid #b39d6f;
   border-radius: 2rem;
 }
-  
+.ad{
+  height: 2rem;
+  width: auto;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+} 
+.ad p{
+  font-size: 1.5rem;
+}
   @media (max-width: 768px) {
     .products {
-      grid-template-columns: 1fr; /* Display products in a single column */
-      gap:100px;
+      grid-template-columns: 1fr; 
+      gap:150px;
     }
   
     .product {
-      margin: 10px; /* Reduce margin further for smaller screens */
+      margin: 10px; 
     }
     .product:hover {
       transform: scale(1.1);
@@ -87,12 +99,40 @@
     }
   
     .addToCartBttn {
-      min-width: 80px; /* Adjust button width for smaller screens */
+      min-width: 80px; 
+    }
+    .hero-banner{
+      display: none;
+    }
+   .filter{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 500px) {
+    .products {
+      grid-template-columns: 1fr; 
+      gap:150px;
+    }
+  
+    .product {
+      margin: 10px; 
+    }
+    .product:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  
+    .addToCartBttn {
+      min-width: 80px; 
+    }
+    .hero-banner{
+      display: none;
     }
   }
   @media (min-width: 769px) {
     .products {
-      grid-template-columns: 1fr 1fr; /* Add more columns for larger screens */
+      grid-template-columns: 1fr 1fr; 
     }
   
     .product {
@@ -113,6 +153,9 @@
       height: 320px; 
       margin: 30px; 
     }
+    .hero-banner{
+      width: 100%;
+    }
   
     .addToCartBttn {
       min-width: 120px; 
@@ -121,6 +164,7 @@
   @media (min-width: 1200px) {
     .products {
       grid-template-columns: 1fr 1fr 1fr 1fr; 
+      gap: 50px;
     }
   
     .product {
@@ -133,3 +177,15 @@
       min-width: 120px; 
     }
   }
+  @media (min-width:1200px)and (max-width: 1360px) {
+  .hero-banner{
+    display: none;
+    }
+    
+  }
+  @media (min-width:900px)and (max-width: 1050px) {
+    .hero-banner{
+      display:none
+      }
+    }
+

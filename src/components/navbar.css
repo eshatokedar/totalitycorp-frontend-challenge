@@ -1,5 +1,5 @@
 .navbar {
-    width: 100%;
+    width: 100vw;
     height: 90px;
     background-color: #b39d6f;
     color: azure;
@@ -28,7 +28,7 @@
     color: azure;
     font-size: 30px;
   }
-
+ 
   @media (max-width: 768px) {
     .navbar{
       height: auto;
@@ -38,4 +38,27 @@
       font-size: 2rem;
     }
   }
+  @media (max-width: 429px) {
+    .navbar{
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .title {
+      display: none;
+    }
+  }
+
+  @media (min-width:1200px)and (max-width: 1360px) {
+    .navbar{
+      height: auto;
+       width: 87rem;
+      }
+    }
+    @media (min-width:900px)and (max-width: 1050px) {
+      .navbar{
+        height: auto;
+         width: 66rem;
+        }
+      }
   
