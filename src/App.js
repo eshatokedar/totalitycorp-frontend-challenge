@@ -5,6 +5,7 @@ import { Shop } from "./pages/shop/shop";
 import { Cart } from "./pages/cart/cart";
 import { ShopContextProvider } from "./context/shop-context";
 import {LoginForm} from "./pages/login/UserLogin"
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<LoginForm/>} />
           </Routes>
+          <Footer/>
         </Router>
       </ShopContextProvider>
     </div>
