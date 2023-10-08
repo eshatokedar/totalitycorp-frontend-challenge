@@ -38,6 +38,12 @@
     color: #b39d6f;
     border: 2px solid #b39d6f;
   }
+  .checkout-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .checkout p{
     font-size: 1.5rem;
@@ -83,12 +89,14 @@
   }
   .checkout-form input{
     height: 3rem;
+    margin: 1rem;
   }
   .checkout-form button{
     height: 3rem;
     background-color:#b39d6f;
     color: azure;
-    margin-left: 8.5rem;
+    border: 2px #826f45;
+   border-radius: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -111,12 +119,17 @@
       margin: 1rem 0;
     }
   
+    .countHandler{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .countHandler button{
-      margin-left: 1rem;
       width: 30px;
     }
     .countHandler input{
       font-size: 1rem;
+      height: 3rem;
     }
   
     .description p {

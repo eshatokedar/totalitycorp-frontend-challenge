@@ -28,11 +28,11 @@
   
  .description {
     font-size: 1.2rem;
-    color: #726446;
+    color: #a18a59;
     text-align: center;
   }
   .description p{
-    margin-bottom: -2px;
+    margin-bottom: -1px;
   }
   
   .product:hover {
@@ -41,6 +41,7 @@
   }
   
   .addToCartBttn {
+    color: #b39d6f;
     background-color: transparent;
     border: 2px solid #b39d6f;
     min-width: 100px;
@@ -64,7 +65,7 @@
   }
   .sort, .category{
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     color: #b39d6f;
   }
 .select-sort, .category-sort{
@@ -87,7 +88,7 @@
   @media (max-width: 768px) {
     .products {
       grid-template-columns: 1fr; 
-      gap:150px;
+      gap:130px;
     }
   
     .product {
@@ -97,7 +98,8 @@
       transform: scale(1.1);
       cursor: pointer;
     }
-  
+    
+
     .addToCartBttn {
       min-width: 80px; 
     }

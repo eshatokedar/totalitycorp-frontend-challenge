@@ -2,7 +2,8 @@
   width: 100%;
   height: auto;
   min-height: 100vh;
-  font-family: "Architects Daughter", cursive;
+  /* font-family: "Architects Daughter", cursive; */
+  font-family: "EB Garamond";
 }
 
 body {
